@@ -34,6 +34,8 @@ import org.wahlzeit.services.ObjectManager;
 
 import java.util.Map;
 
+import org.wahlzeit.location.Location;
+
 /**
  * A photo represents a user-provided (uploaded) photo.
  */
@@ -68,6 +70,8 @@ public class Photo extends DataObject {
 	public static final int MAX_THUMB_PHOTO_HEIGHT = 150;
 
 	protected PhotoId id = null;
+        
+        public Location location = null;
 	
 	/**
 	 *
@@ -418,4 +422,8 @@ public class Photo extends DataObject {
 		noVotesAtLastNotification = noVotes;
 		incWriteCount();
 	}
+        
+        public void setLocation (Location lctn) {
+            this.location = lctn;
+        }
 }
