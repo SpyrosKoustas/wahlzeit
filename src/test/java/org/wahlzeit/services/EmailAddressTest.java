@@ -65,6 +65,10 @@ public class EmailAddressTest extends TestCase {
 	public void testEmptyEmailAddress() {
 		assertFalse(EmailAddress.EMPTY.isValid());
 	}
+        
+        public void testValidEmailAddress() {
+            assertFalse(EmailAddress.isValid());
+        }
 
 }
 
