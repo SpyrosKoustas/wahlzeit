@@ -3,17 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.wahlzeit.services.mailing;
+package org.wahlzeit.model;
 
-import org.wahlzeit.services.mailing.EmailServiceTest.java;
+import org.wahlzeit.model.Photo;
+
 
 /**
  *
  * @author spyros
  */
-
-@RunWith(Suite.class)
-@Suite.SuiteClasses({EmailServiceTest.class})
-public class EmailServiceTestSuite {
+public class SupercarsPhoto extends Photo {
+    
+    public SupercarsPhoto() {
+        super();
+    }
     
 }
