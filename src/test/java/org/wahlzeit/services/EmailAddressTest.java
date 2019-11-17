@@ -20,6 +20,7 @@
 
 package org.wahlzeit.services;
 
+import org.junit.Test;
 import junit.framework.TestCase;
 
 /**
@@ -30,6 +31,7 @@ public class EmailAddressTest extends TestCase {
 	/**
 	 *
 	 */
+        @Test
 	public EmailAddressTest(String name) {
 		super(name);
 	}
@@ -37,6 +39,7 @@ public class EmailAddressTest extends TestCase {
 	/**
 	 *
 	 */
+        @Test
 	public void testGetEmailAddressFromString() {
 		// invalid email addresses are allowed for local testing and online avoided by Google
 
@@ -62,10 +65,12 @@ public class EmailAddressTest extends TestCase {
 	/**
 	 *
 	 */
+        @Test
 	public void testEmptyEmailAddress() {
 		assertFalse(EmailAddress.EMPTY.isValid());
 	}
         
+        @Test
         public void testValidEmailAddress() {
             assertFalse(EmailAddress.isValid());
         }
