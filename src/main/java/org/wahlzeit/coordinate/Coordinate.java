@@ -13,6 +13,9 @@ package org.wahlzeit.coordinate;
 
 //Interface
 public interface Coordinate {
+    public double getAttr1();
+    public double getAttr2();
+    public double getAttr3();
     public CartesianCoordinate asCartesianCoordinate();
     public double getCartesianDistance(Coordinate crdnt);
     public SphericCoordinate asSphericCoordinate();
