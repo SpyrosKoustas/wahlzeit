@@ -5,7 +5,10 @@
  */
 package org.wahlzeit.services.mailing;
 
-import org.wahlzeit.services.mailing.EmailServiceTest.java;
+import org.junit.runner.*;
+import org.junit.runners.*;
+
+//import org.wahlzeit.services.mailing.EmailServiceTest.java;
 
 /**
  *

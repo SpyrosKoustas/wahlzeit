@@ -5,22 +5,25 @@
  */
 package AllTests;
 
-import org.wahlzeit.handlers.TellFriendTest.java;
-import org.walzeit.model.AccessRightsTest.java;
-import org.walzeit.model.FlagReasonTest.java;
-import org.walzeit.model.GenderTest.java;
-import org.walzeit.model.GuestTest.java;
-import org.walzeit.model.PhotoFilterTest.java;
-import org.walzeit.model.TagsTest.java;
-import org.walzeit.model.UserStatusTest.java;
-import org.walzeit.model.ValueTest.java;
-import org.walzeit.model.persistence.AbstractAdapterTest.java;
-import org.walzeit.model.persistence.DatastoreAdapterTest.java;
-import org.walzeit.services.EmailAddressTest.java;
-import org.walzeit.services.LogBuilderTest.java;
-import org.walzeit.services.mailing.EmailServiceTestSuite.java;
-import org.walzeit.utils.StringUtilTest.java;
-import org.walzeit.utils.VersionTest.java;
+import org.junit.runner.*;
+import org.junit.runners.*;
+
+import org.wahlzeit.handlers.TellFriendTest.class;
+import org.walzeit.model.AccessRightsTest.class;
+import org.walzeit.model.FlagReasonTest.class;
+import org.walzeit.model.GenderTest.class;
+import org.walzeit.model.GuestTest.class;
+import org.walzeit.model.PhotoFilterTest.class;
+import org.walzeit.model.TagsTest.class;
+import org.walzeit.model.UserStatusTest.class;
+import org.walzeit.model.ValueTest.class;
+import org.walzeit.model.persistence.AbstractAdapterTest.class;
+import org.walzeit.model.persistence.DatastoreAdapterTest.class;
+import org.walzeit.services.EmailAddressTest.class;
+import org.walzeit.services.LogBuilderTest.class;
+import org.walzeit.services.mailing.EmailServiceTestSuite.class;
+import org.walzeit.utils.StringUtilTest.class;
+import org.walzeit.utils.VersionTest.class;
 
 /**
  *

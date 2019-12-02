@@ -17,6 +17,7 @@ abstract class AbstractCoordinate {
     private double attr3;
     
     public AbstractCoordinate (double _attr1, double _attr2, double _attr3) {
+        
      this.attr1 = _attr1;
      this.attr2 = _attr2;
      this.attr3 = _attr3;
