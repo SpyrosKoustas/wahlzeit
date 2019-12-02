@@ -27,7 +27,7 @@ import org.walzeit.utils.VersionTest.java;
  * @author spyros
  */
 
-@RunWith{Suite.class}
+@RunWith(Suite.class)
 @Suite.SuiteClasses({TellFriendTest.class, AccessRightsTest.class, FlagReasonTest.class, GenderTest.class, GuestTest.class, PhotoFilterTest.class, TagsTest.class, UserStatusTest.class, ValueTest.class, AbstractAdapterTest.class, DatastoreAdapterTest.class, EmailAddressTest.class, LogBuilderTest.class, EmailServiceTestSuite.class, StringUtilTest.class, VersionTest.class})
 public class java {
     

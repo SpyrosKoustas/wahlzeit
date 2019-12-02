@@ -12,7 +12,7 @@ import org.wahlzeit.services.mailing.EmailServiceTest.java;
  * @author spyros
  */
 
-@RunWith{Suite.class}
+@RunWith(Suite.class)
 @Suite.SuiteClasses({EmailServiceTest.class})
 public class EmailServiceTestSuite {
     
