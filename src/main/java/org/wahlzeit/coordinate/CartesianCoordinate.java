@@ -30,7 +30,7 @@ public class CartesianCoordinate extends AbstractCoordinate {
     
     public SphericCoordinate asSphericCoordinate () {        
         double r = Math.pow(this.getAttr1(), 2) + Math.pow(this.getAttr2(), 2) + Math.pow(this.getAttr3(), 2);
-        return new SphericCoordinate(Math.atan(this.getAttr2()/this.getAttr1()), Math.acos(this.getAttr3()/r), r,2);
+        return new SphericCoordinate(Math.atan(this.getAttr2()/this.getAttr1()), Math.acos(this.getAttr3()/r), r);
     }
         
     public boolean isEqual (Coordinate crdnt) {
