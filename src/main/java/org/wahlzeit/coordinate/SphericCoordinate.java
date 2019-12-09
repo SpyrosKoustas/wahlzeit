@@ -54,4 +54,5 @@ public class SphericCoordinate extends AbstractCoordinate {
         }
     }
     
+    //include assert();    
 }

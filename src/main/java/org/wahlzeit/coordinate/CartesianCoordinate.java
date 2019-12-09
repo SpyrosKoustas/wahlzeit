@@ -55,4 +55,6 @@ public class CartesianCoordinate extends AbstractCoordinate {
             return false;
         }
     }
+    
+    // include assert();
 }
