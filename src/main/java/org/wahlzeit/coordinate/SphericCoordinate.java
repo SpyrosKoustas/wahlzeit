@@ -6,6 +6,9 @@
 package org.wahlzeit.coordinate;
 
 import java.lang.Math;
+import java.lang.IllegalArgumentException;
+import java.lang.NullPointerException;
+import java.lang.IllegalStateException;
 
 /**
  *
@@ -33,6 +36,7 @@ public class SphericCoordinate extends AbstractCoordinate {
     //source: https://en.wikipedia.org/wiki/Haversine_formula
     
     public double getCentralAngle(SphericCoordinate crdnt) {
+        
         double centralAngle = 0;
         
         double dLat = Math.toRadians(crdnt.getAttr1() - this.getAttr1());
@@ -46,13 +50,17 @@ public class SphericCoordinate extends AbstractCoordinate {
         return centralAngle;
     }
     
-    public boolean isEqual (Coordinate crdnt) {
-        if (asCartesianCoordinate().getCartesianDistance(crdnt) == 0) {
-            return true;
-        } else {
-            return false;
+    public boolean isEqual (Coordinate crdnt) {        
+        try {
+            assertNotNull(crdnt);
+            if (asCartesianCoordinate().getCartesianDistance(crdnt) == 0) {
+                return true;
+            } else {
+                return false;
+            }
         }
-    }
-    
-    //include assert();    
+        catch (NullPointerException e) {
+            throw e;
+        }
+    }    
 }

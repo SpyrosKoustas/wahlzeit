@@ -21,4 +21,6 @@ public interface Coordinate {
     public SphericCoordinate asSphericCoordinate();
     public double getCentralAngle(Coordinate crdnt);
     public boolean isEqual(Coordinate crdnt);
+    
+    public void assertNotNull(Coordinate crdnt);
 }
