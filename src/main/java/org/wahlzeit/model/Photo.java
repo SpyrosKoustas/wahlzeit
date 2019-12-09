@@ -423,6 +423,13 @@ public class Photo extends DataObject {
 		incWriteCount();
 	}
         
+        public void assertNotNull(Location lctn) throws NullPointerException {
+            if (lctn == null) {
+                String msg = "Location is null!";
+                throw new NullPointerException(msg);
+            }
+        }
+        
         public void setLocation (Location lctn) throws NullPointerException {            
             try {
                 assertNotNull(lctn);
