@@ -26,7 +26,7 @@ public class CartesianCoordinate extends AbstractCoordinate {
         return this;
     }
     
-    public double getCartesianDistance (Coordinate crdnt) { 
+    public double getCartesianDistance (Coordinate crdnt) throws IllegalStateException { 
         
         try {
             

@@ -35,7 +35,7 @@ public class SphericCoordinate extends AbstractCoordinate {
     //I used the haversine fomula to calculate the central angle
     //source: https://en.wikipedia.org/wiki/Haversine_formula
     
-    public double getCentralAngle(SphericCoordinate crdnt) {
+    public double getCentralAngle(SphericCoordinate crdnt) throws IllegalStateException {
         
         double centralAngle = 0;
         

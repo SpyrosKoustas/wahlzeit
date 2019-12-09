@@ -423,7 +423,13 @@ public class Photo extends DataObject {
 		incWriteCount();
 	}
         
-        public void setLocation (Location lctn) {
-            this.location = lctn;
+        public void setLocation (Location lctn) throws NullPointerException {            
+            try {
+                assertNotNull(lctn);
+                this.location = lctn;
+            }
+            catch (NullPointerException e) {
+                throw e;
+            }
         }
 }
