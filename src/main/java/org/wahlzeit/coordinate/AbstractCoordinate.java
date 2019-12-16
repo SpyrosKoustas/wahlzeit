@@ -8,6 +8,7 @@ import java.lang.Math;
 import java.lang.IllegalArgumentException;
 import java.lang.NullPointerException;
 import java.lang.IllegalStateException;
+import java.util.Objects;
 
 /**
  *
@@ -15,9 +16,21 @@ import java.lang.IllegalStateException;
  */
 abstract class AbstractCoordinate {
     
-    private double attr1;
-    private double attr2;
-    private double attr3;
+    private final double attr1;
+    private final double attr2;
+    private final double attr3;
+    
+    public boolean equals(Object obj) {
+        if ((obj == null) || (obj instanceof Coordinate)) {
+            return false;
+        }        
+        Coordinate crdnt = (Coordinate) obj;
+        return true;
+    }
+    
+    public int hashCode() {
+        return Objects.hash(attr1, attr2, attr3);
+    }
     
     //The attributes of the other objects
     double exitAttr1;
@@ -41,12 +54,6 @@ abstract class AbstractCoordinate {
     
     public double getAttr3() {
         return this.attr3;
-    }
-    
-    public void setCoordinates (double _attr1, double _attr2, double _attr3){
-        this.attr1 = _attr1;
-        this.attr2 = _attr2;
-        this.attr3 = _attr3;
     }
     
     public void assertAttributeTest(double _attr1, double _attr2, double _attr3) throws IllegalStateException {
