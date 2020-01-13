@@ -9,13 +9,19 @@ import java.lang.Math;
 import java.lang.IllegalArgumentException;
 import java.lang.NullPointerException;
 import java.lang.IllegalStateException;
+import org.wahlzeit.model.PatternInstance;
 
 /**
  *
  * @author spyros
  */
 
-
+@PatternInstance (
+        patternName = "Composite",
+        participants = {
+        "Composite"
+    }
+)
 public class CartesianCoordinate extends AbstractCoordinate {
     
     public CartesianCoordinate (double _x, double _y, double _z) {        

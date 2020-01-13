@@ -9,11 +9,19 @@ import java.lang.IllegalArgumentException;
 import java.lang.NullPointerException;
 import java.lang.IllegalStateException;
 import java.util.Objects;
+import org.wahlzeit.model.PatternInstance;
 
 /**
  *
  * @author spyros
  */
+
+@PatternInstance (
+        patternName = "Composite",
+        participants = {
+        "Component"
+    }
+)
 abstract class AbstractCoordinate {
     
     private final double attr1;

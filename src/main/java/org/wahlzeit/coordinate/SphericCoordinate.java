@@ -9,11 +9,18 @@ import java.lang.Math;
 import java.lang.IllegalArgumentException;
 import java.lang.NullPointerException;
 import java.lang.IllegalStateException;
+import org.wahlzeit.model.PatternInstance;
 
 /**
  *
  * @author spyros
  */
+@PatternInstance (
+        patternName = "Composite",
+        participants = {
+        "Composite"
+    }
+)
 public class SphericCoordinate extends AbstractCoordinate {
     
     public SphericCoordinate (double _phi, double _theta, double _radius) {        

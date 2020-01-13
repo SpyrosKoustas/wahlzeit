@@ -28,7 +28,7 @@ import java.util.logging.Logger;
  * An Abstract Factory for creating photos and related objects.
  */
 @PatternInstance (
-        patternName = "Abstract Factory"
+        patternName = "Abstract Factory",
         participants = {
         "AbstractFactory", "ConcreteFactory"
     }
