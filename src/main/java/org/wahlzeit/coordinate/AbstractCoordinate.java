@@ -43,7 +43,7 @@ abstract class AbstractCoordinate {
      this.attr2 = _attr2;
      this.attr3 = _attr3;
     }
-    
+        
     public double getAttr1() {
         return this.attr1;
     }
