@@ -17,9 +17,9 @@ import org.wahlzeit.model.PatternInstance;
  */
 
 @PatternInstance (
-        patternName = "Composite",
+        patternName = "Factory Method",
         participants = {
-        "Component"
+        "Concrete Product"
     }
 )
 abstract class AbstractCoordinate {

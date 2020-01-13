@@ -16,9 +16,9 @@ import org.wahlzeit.model.PatternInstance;
  * @author spyros
  */
 @PatternInstance (
-        patternName = "Composite",
+        patternName = "Factory Method",
         participants = {
-        "Composite"
+        "Concrete Product"
     }
 )
 public class SphericCoordinate extends AbstractCoordinate {
