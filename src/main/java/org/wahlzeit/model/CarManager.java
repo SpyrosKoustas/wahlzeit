@@ -18,7 +18,7 @@ public class CarManager {
     public Set<Car> cars = new HashSet<Car>();
     
     public Car createCar(String carTypeName) {
-        CarType ct = getCarTypeName(carTypeName);
+        CarType ct = getCarType(carTypeName);
         Car result = ct.createInstance();
         cars.add(result);
         return result;

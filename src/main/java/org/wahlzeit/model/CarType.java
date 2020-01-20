@@ -70,4 +70,9 @@ public class CarType {
         
         return false;
     }
+    
+    public void addSuperType(CarType ct) {
+        assert (ct != null) : "Car type should not be null!"; 
+        superCarType = ct;
+    }
 }
