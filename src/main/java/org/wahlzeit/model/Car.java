@@ -19,11 +19,11 @@ public class Car {
         carType = ct;    
     }
     
-    public String getCarManager() {
+    public CarManager getCarManager() {
         return carManager;
     }
     
-    public String getCarType() {
+    public CarType getCarType() {
         return carType;
     }
 }

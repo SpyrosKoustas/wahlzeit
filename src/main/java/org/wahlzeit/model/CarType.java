@@ -34,7 +34,7 @@ public class CarType {
         return carTypeName;
     }
     
-    public String getSuperCarType() {
+    public CarType getSuperCarType() {
         return superCarType;
     }
     
