@@ -10,5 +10,20 @@ package org.wahlzeit.model;
  * @author spyros
  */
 public class Car {
+   
+    protected CarManager carManager =  null;
+    protected CarType carType = null;
     
+    public Car (CarManager cm, CarType ct) {
+        carManager = cm;
+        carType = ct;    
+    }
+    
+    public String getCarManager() {
+        return carManager;
+    }
+    
+    public String getCarType() {
+        return carType;
+    }
 }
