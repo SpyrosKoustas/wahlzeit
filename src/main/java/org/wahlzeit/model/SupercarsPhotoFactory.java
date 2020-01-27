@@ -17,7 +17,7 @@ public class SupercarsPhotoFactory extends PhotoFactory {
         super();
     }
     
-    public createPhoto() {
+    public SupercarsPhoto createPhoto() {
         return new SupercarsPhoto();
     }
     
