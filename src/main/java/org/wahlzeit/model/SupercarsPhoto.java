@@ -7,6 +7,7 @@ package org.wahlzeit.model;
 
 import org.wahlzeit.model.Photo;
 
+//Added a comment on 03.02.2020
 
 /**
  *
